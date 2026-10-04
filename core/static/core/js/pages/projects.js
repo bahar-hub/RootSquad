@@ -1,0 +1,1 @@
+export function initProjects(){const buttons=document.querySelectorAll('#fl button');buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.toggle('on',x===b));document.querySelectorAll('#pg .card').forEach(c=>c.style.display=b.dataset.f==='all'||c.dataset.c===b.dataset.f?'':'none')}));}

@@ -1,0 +1,17 @@
+<header class="site-header">
+  <a class="lg lat" href="{% url 'core:home' %}" style="text-decoration:none">
+    <svg width="26" height="30" viewBox="0 0 40 46" fill="none" stroke="#39ff88" stroke-width="2.2" aria-hidden="true">
+      <path d="M20 2 38 12v22L20 44 2 34V12z"/>
+      <path d="M20 40V22M20 28C14 24 10 18 10 12M20 24c4-4 8-8 9-14M20 32c-5-2-8-3-12-1"/>
+    </svg>
+    ROOT SQUAD
+  </a>
+  <nav>
+    <a href="{% url 'core:home' %}" class="{% if request.resolver_match.url_name == 'home' %}on{% endif %}">خانه</a>
+    <a href="{% url 'core:about' %}" class="{% if request.resolver_match.url_name == 'about' %}on{% endif %}">درباره ما</a>
+    <a href="{% url 'core:projects' %}" class="{% if request.resolver_match.url_name == 'projects' %}on{% endif %}">پروژه‌ها</a>
+    <a href="{% url 'core:services' %}" class="{% if request.resolver_match.url_name == 'services' %}on{% endif %}">خدمات</a>
+    <a href="{% url 'core:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}on{% endif %}">تماس با ما</a>
+  </nav>
+  <a class="cta" href="{% url 'core:estimate' %}">تخمین هزینه</a>
+</header>

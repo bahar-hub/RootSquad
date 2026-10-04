@@ -1,0 +1,1 @@
+.tl{border-right:2px solid var(--g);padding-right:26px;margin-top:26px;max-width:640px}.tl div{position:relative;margin-bottom:28px}.tl div:before{content:"";position:absolute;right:-35px;top:6px;width:14px;height:14px;background:var(--g);transform:rotate(45deg);box-shadow:0 0 12px var(--g)}.tl p{color:var(--mut);font-size:14px;margin-top:4px}

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;400;700;900&family=Michroma&display=swap" rel="stylesheet">
+  <title>{% block title %}Root Squad | از ریشه تا برگ{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'core/css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/layout.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/components.css' %}">
+  {% block page_css %}{% endblock %}
+</head>
+<body data-page="{% block page_name %}base{% endblock %}">
+  {% include 'core/includes/header.html' %}
+  <main>{% block content %}{% endblock %}</main>
+  {% include 'core/includes/footer.html' %}
+  <script type="module" src="{% static 'core/js/main.js' %}"></script>
+  {% block page_js %}{% endblock %}
+</body>
+</html>

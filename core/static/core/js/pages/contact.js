@@ -1,0 +1,1 @@
+export function initContact(){const form=document.getElementById('contact-form');if(!form)return;form.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('fn').value.trim();document.getElementById('ok').textContent=name?'پیام شما ثبت شد؛ به‌زودی تماس می‌گیریم. (این فرم هنوز به سرور وصل نیست)':'لطفاً نام خود را وارد کنید.';});}
