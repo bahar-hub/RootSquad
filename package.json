@@ -1,0 +1,12 @@
+{
+  "name": "root-squad-django",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "sass:build": "sass --no-source-map --style=compressed core/static/core/scss/main.scss core/static/core/css/main.css",
+    "sass:watch": "sass --watch core/static/core/scss/main.scss:core/static/core/css/main.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}

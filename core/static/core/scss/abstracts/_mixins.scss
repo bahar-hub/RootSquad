@@ -1,0 +1,15 @@
+@mixin mobile {
+  @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+@mixin glass-card {
+  background: var(--card);
+  border: 1px solid rgba(57, 255, 136, .25);
+  backdrop-filter: blur(10px);
+}
+
+@mixin pill {
+  border-radius: $radius-pill;
+}

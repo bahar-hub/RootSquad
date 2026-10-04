@@ -4,7 +4,7 @@ export function initTree(){
   const cv=$('tree-canvas'); if(!cv) return;
   window.RK='home';
 
-const cv=$('tree-canvas'),cx=cv.getContext('2d');let W,H,D;
+const cx=cv.getContext('2d');let W,H,D;
 function rs(){D=Math.min(devicePixelRatio||1,2);W=cv.width=innerWidth*D;H=cv.height=innerHeight*D}
 addEventListener('resize',rs);rs();
 const B=[],LV=7;let TOP=0;

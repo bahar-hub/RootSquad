@@ -1,0 +1,25 @@
+$color-bg: #0e1118;
+$color-green: #39ff88;
+$color-mint: #a7f3cf;
+$color-white: #f4f7f5;
+$color-gray: #242b33;
+$color-muted: #9aa7a3;
+$color-lead: #cfd8d4;
+$card-bg: rgba(36, 43, 51, .55);
+$bp-mobile: 800px;
+$radius-card: 20px;
+$radius-pill: 999px;
+$transition-base: .3s ease;
+
+:root {
+  --bg: #{$color-bg};
+  --g: #{$color-green};
+  --mint: #{$color-mint};
+  --w: #{$color-white};
+  --gr: #{$color-gray};
+  --card: #{$card-bg};
+  --txt: #{$color-white};
+  --mut: #{$color-muted};
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}

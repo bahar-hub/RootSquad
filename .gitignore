@@ -17,3 +17,5 @@ media/
 
 # Logs
 *.log
+node_modules/
+.sass-cache/

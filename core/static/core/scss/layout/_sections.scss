@@ -1,0 +1,18 @@
+main {
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 14vh 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include mobile { padding: 14vh 6vw; }
+}
+
+.page-hero { min-height: 55vh; }

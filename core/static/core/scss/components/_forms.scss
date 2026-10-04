@@ -1,0 +1,16 @@
+.fld {
+  display: block;
+  width: 100%;
+  background: rgba(14, 17, 24, .7);
+  border: 1px solid rgba(167, 243, 207, .3);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: var(--w);
+  font: inherit;
+  margin-bottom: 12px;
+
+  &:focus {
+    outline: 0;
+    border-color: var(--g);
+  }
+}

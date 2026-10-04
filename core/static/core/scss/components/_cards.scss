@@ -1,0 +1,54 @@
+.card {
+  @include glass-card;
+  border-radius: $radius-card;
+  padding: 24px;
+  transition: .4s;
+  opacity: 0;
+  transform: translateY(50px) scale(.96);
+
+  &.in,
+  &.static {
+    opacity: 1;
+    transform: none;
+  }
+
+  &:hover {
+    border-color: var(--g);
+    box-shadow: 0 0 30px rgba(57, 255, 136, .2);
+  }
+
+  h3 {
+    font-size: 19px;
+    margin: 10px 0 6px;
+    color: var(--w);
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: var(--mut);
+  }
+}
+
+.av {
+  width: 64px;
+  height: 74px;
+  background: var(--g);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  display: grid;
+  place-items: center;
+  color: var(--bg);
+  font-weight: 900;
+}
+
+.ph {
+  height: 150px;
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(57, 255, 136, .35), rgba(14, 17, 24, .2)),
+    repeating-linear-gradient(60deg, transparent 0 14px, rgba(167, 243, 207, .12) 14px 15px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+}

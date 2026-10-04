@@ -1,0 +1,22 @@
+.fl {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+  button {
+    background: none;
+    border: 1px solid rgba(167, 243, 207, .35);
+    color: var(--w);
+    padding: 8px 18px;
+    @include pill;
+    font: inherit;
+    cursor: pointer;
+  }
+
+  .on {
+    background: var(--g);
+    color: var(--bg);
+    border-color: var(--g);
+  }
+}

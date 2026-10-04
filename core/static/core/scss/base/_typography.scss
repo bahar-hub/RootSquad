@@ -1,0 +1,23 @@
+.lat { font-family: "Michroma", "Arial", sans-serif; }
+
+h1 {
+  font-size: clamp(40px, 8vw, 110px);
+  font-weight: 900;
+  line-height: 1.1;
+
+  span { color: var(--g); }
+}
+
+h2 {
+  font-size: clamp(30px, 4.5vw, 60px);
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+p.lead {
+  max-width: 640px;
+  line-height: 2.1;
+  color: $color-lead;
+  font-weight: 200;
+  font-size: 17px;
+}

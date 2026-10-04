@@ -1,1 +1,0 @@
-.two{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;margin-top:30px}.two .card{opacity:1;transform:none}@media(max-width:800px){.two{grid-template-columns:1fr}}
