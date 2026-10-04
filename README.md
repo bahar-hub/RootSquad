@@ -1,6 +1,4 @@
-# Root Squad — Django + SCSS
-
-فرانت Root Squad به ساختار Django Template + SCSS ماژولار تبدیل شده است.
+# Root Squad 
 
 ## ساختار مهم
 
